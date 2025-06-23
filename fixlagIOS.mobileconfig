@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadIdentifier</key>
+  <string>com.duyvinh09config.gaming.2025</string>
+  <key>PayloadUUID</key>
+  <string>8F9A2C1D-7E3B-4A9C-B2E8-6C4F1D2E9B7A</string>
+  <key>PayloadDisplayName</key>
+  <string>Cấu Hình Tối Ưu iPhone "Mượt Như Mơ - Pin Trâu - Mát Lạnh"</string>
+  <key>PayloadDescription</key>
+  <string>🔥 Tại Sao Bạn Cần File Cấu Hình Này?
+iPhone của bạn đang giật lag, pin tụt nhanh, máy nóng như lò sưởi? Đây chính là "bùa chú" giúp:
+✅ Mượt – Ổn Định – Nhanh Như Chớp
+• Kết nối siêu tốc với Cloudflare DNS (1.1.1.1) và Google DNS – giảm ping, chặn quảng cáo, vào game mượt hơn, web load nhanh hơn.
+✅ Pin Trâu Hơn 20-30% – Máy Luôn Mát Lạnh
+• Tắt hơn 50 dịch vụ nền gây hao pin như Siri, định vị, iCloud, tìm iPhone, cập nhật ngầm, đo lường chuyển động, đồng bộ không cần thiết.
+✅ Tăng Hiệu Năng – Giảm Gánh Cho CPU
+• Hạn chế app chạy nền, tắt hiệu ứng giao diện, vô hiệu các tác vụ không thiết yếu – giúp iPhone chạy mượt hơn, phản hồi nhanh hơn đáng kể.
+✅ Chặn Cập Nhật iOS Tự Động
+• Không còn lo Apple “làm chậm máy” qua bản cập nhật – bạn hoàn toàn kiểm soát được khi nào nâng cấp.
+
+💡 Tương thích tốt với mọi dòng iPhone, đặc biệt hiệu quả với iPhone đời cũ (6/7/8). Không yêu cầu jailbreak, không ảnh hưởng bảo hành.
+
+📬 Hỗ trợ kỹ thuật: t.me/duyvinh09 nếu gặp lỗi.
+
+📥 Cài Đặt Ngay và Trải Nghiệm Sự Khác Biệt!
+Một lần cài - Lợi ích mãi mãi!
+  </string>
+  <key>PayloadOrganization</key>
+  <string>Phiên bản Premium bởi Đinh Duy Vinh</string>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+  <key>PayloadContent</key>
+  <array>
+    <!-- DNS Settings -->
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.dnsSettings.managed</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadIdentifier</key>
+      <string>com.duyvinh09config.dns.2025</string>
+      <key>PayloadUUID</key>
+      <string>4C7E8D9F-3A2B-4E5C-9F1A-6D2C8B0E7F4A</string>
+      <key>PayloadDisplayName</key>
+      <string>DNS Tối Ưu Gaming</string>
+      <key>DNSSettings</key>
+      <dict>
+        <key>DNSProtocol</key>
+        <string>HTTPS</string>
+        <key>ServerName</key>
+        <string>1dot1dot1dot1.cloudflare-dns.com</string>
+        <key>ServerURL</key>
+        <string>https://cloudflare-dns.com/dns-query</string>
+        <key>ServerAddresses</key>
+        <array>
+          <string>1.1.1.1</string>  <!-- Cloudflare DNS chính -->
+          <string>1.0.0.1</string>  <!-- Cloudflare DNS phụ -->
+          <string>8.8.8.8</string>  <!-- Google DNS chính -->
+          <string>8.8.4.4</string>  <!-- Google DNS phụ -->
+        </array>
+        <key>SupplementalMatchDomains</key>
+        <array>
+          <string>apple.com</string>
+          <string>icloud.com</string>
+        </array>
+        <key>SupplementalMatchDomainsNoSearch</key>
+        <array>
+          <string>ads.google.com</string>
+          <string>doubleclick.net</string>
+          <string>ads.apple.com</string>
+        </array>
+      </dict>
+    </dict>
+    <!-- Restrictions -->
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.applicationaccess</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadIdentifier</key>
+      <string>com.duyvinh09config.restrict.2025</string>
+      <key>PayloadUUID</key>
+      <string>9E2F7C1A-5B3D-4F8E-A2C9-7F0D6A1B8E5C</string>
+      <key>PayloadEnabled</key>
+      <true/>
+      <!-- Danh sách các tính năng bị vô hiệu hóa -->
+      <!-- 📵 QUYỀN RIÊNG TƯ & THEO DÕI -->
+      <key>allowAppTrackingTransparency</key><false/>       <!-- Chặn yêu cầu theo dõi giữa các app -->
+      <key>allowAdTracking</key><false/>                    <!-- Chặn quảng cáo theo hành vi -->
+      <key>allowPersonalizedAds</key><false/>               <!-- Chặn quảng cáo cá nhân hóa -->
+      <key>allowAnalytics</key><false/>                     <!-- Chặn gửi phân tích sử dụng thiết bị -->
+      <key>allowAppAnalytics</key><false/>                  <!-- Chặn gửi dữ liệu phân tích ứng dụng -->
+      <key>allowCrashReporting</key><false/>                <!-- Tắt gửi báo cáo lỗi ứng dụng -->
+      <key>allowDiagnosticSubmission</key><false/>          <!-- Tắt gửi dữ liệu chẩn đoán hệ thống -->
+
+      <!-- 🛰️ DỊCH VỤ VỊ TRÍ & CHUYỂN ĐỘNG -->
+      <key>allowLocationServices</key><false/>              <!-- Tắt hoàn toàn dịch vụ định vị -->
+      <key>allowedLocationApps</key>                        <!-- Chỉ cho phép định vị với các ứng dụng sau -->
+      <array>
+        <string>com.apple.Maps</string>                     <!-- Apple Maps -->
+        <string>com.google.Maps</string>                    <!-- Google Maps -->
+      </array>
+      <key>allowMotionAndFitness</key><false/>              <!-- Tắt cảm biến chuyển động & sức khỏe -->
+      <key>allowNearbyDevices</key><false/>                 <!-- Chặn kết nối thiết bị gần (AirDrop, Apple Watch...) -->
+      <key>allowNearbyInteraction</key><false/>             <!-- Chặn tương tác bằng chip U1 (Ultra Wideband) -->
+      <key>allowProximitySetupToNewDevice</key><false/>     <!-- Chặn thiết lập thiết bị mới bằng thiết bị cũ gần đó -->
+
+      <!-- 🎙️ TRỢ LÝ & NHẬP LIỆU -->
+      <key>allowSiri</key><false/>                          <!-- Tắt Siri -->
+      <key>allowAssistantWhileLocked</key><false/>          <!-- Tắt Siri khi màn hình bị khóa -->
+      <key>allowAssistantUserGeneratedContent</key><false/> <!-- Chặn Siri học hành vi sử dụng -->
+      <key>allowDictation</key><false/>                     <!-- Tắt chức năng đọc chính tả (mic trên bàn phím) -->
+      <key>allowVoiceDialing</key><false/>                  <!-- Tắt quay số bằng giọng nói từ màn hình khóa -->
+
+      <!-- 🔠 BÀN PHÍM & GỢI Ý -->
+      <key>allowPredictiveKeyboard</key><false/>            <!-- Tắt gợi ý từ khi gõ -->
+      <key>allowAutoCorrection</key><false/>                <!-- Tắt tự động sửa lỗi chính tả -->
+      <key>allowSpellCheck</key><false/>                    <!-- Tắt kiểm tra chính tả -->
+      <key>allowDefinitionLookup</key><false/>              <!-- Tắt tra nghĩa từ điển khi chọn từ -->
+
+      <!-- 🧠 HÀNH VI & TÍNH NĂNG LIÊN KẾT -->
+      <key>allowActivityContinuation</key><false/>          <!-- Tắt Handoff (chuyển tác vụ giữa thiết bị) -->
+      <key>allowUniversalClipboard</key><false/>            <!-- Tắt clipboard đa thiết bị (copy-paste giữa iPhone/Mac) -->
+      <key>allowHandoff</key><false/>                       <!-- Tắt Handoff hoàn toàn -->
+
+      <!-- 💻 MÀN HÌNH KHÓA & GIAO DIỆN -->
+      <key>allowWallpaperModification</key><false/>         <!-- Tắt quyền thay đổi hình nền -->
+      <key>allowLockScreenNotificationsView</key><false/>   <!-- Tắt xem thông báo từ màn hình khóa -->
+      <key>allowLockScreenControlCenter</key><false/>       <!-- Tắt mở Control Center từ màn hình khóa -->
+      <key>allowLockScreenTodayView</key><false/>           <!-- Tắt truy cập Today View (widget) khi khóa -->
+      <key>allowPassbookWhileLocked</key><false/>           <!-- Tắt Apple Wallet (Passbook) khi khóa -->
+
+      <!-- 📶 KẾT NỐI & TRUYỀN DỮ LIỆU -->
+      <key>allowAirDrop</key><false/>                       <!-- Tắt AirDrop -->
+      <key>allowAirPlay</key><false/>                       <!-- Tắt AirPlay -->
+      <key>allowAirPlayIncomingRequests</key><false/>       <!-- Chặn yêu cầu chiếu màn hình tới thiết bị -->
+      <key>allowBluetoothModification</key><false/>         <!-- Chặn tự động bật/tắt Bluetooth -->
+      <key>allowAppCellularDataModification</key><false/>   <!-- Chặn chỉnh dữ liệu di động trong ứng dụng -->
+
+      <!-- 🔐 BẢO MẬT & FIND MY IPHONE -->
+      <key>allowAutoUnlock</key><false/>                    <!-- Tắt mở khóa bằng Apple Watch -->
+      <key>allowFindMyDevice</key><false/>                  <!-- Tắt Find My iPhone (ẩn khỏi iCloud) -->
+      <key>allowFindMyDeviceModification</key><false/>      <!-- Chặn thay đổi cài đặt Find My iPhone -->
+      <key>allowRemoteScreenObservation</key><false/>       <!-- Tắt điều khiển/mirror màn hình từ xa -->
+
+      <!-- 🔧 CẬP NHẬT & QUẢN LÝ ỨNG DỤNG -->
+      <key>allowSoftwareUpdate</key><false/>                <!-- Tắt cập nhật iOS -->
+      <key>allowOTAPKIUpdates</key><false/>                 <!-- Chặn cập nhật PKI OTA (chứng chỉ hệ thống) -->
+      <key>allowAutomaticAppUpdates</key><false/>           <!-- Tắt cập nhật ứng dụng tự động -->
+      <key>allowAppRating</key><false/>                     <!-- Tắt yêu cầu đánh giá app trên App Store -->
+      <key>allowUnmanagedAppBackup</key><false/>            <!-- Chặn backup app không thuộc hệ thống quản lý -->
+
+      <!-- ☁️ DỊCH VỤ iCLOUD -->
+      <key>allowCloudBackup</key><false/>                   <!-- Tắt sao lưu iCloud -->
+      <key>allowCloudDocuments</key><false/>                <!-- Tắt lưu file iCloud Drive -->
+      <key>allowCloudDocumentSync</key><false/>             <!-- Tắt đồng bộ tài liệu với iCloud -->
+      <key>allowCloudCustomDomains</key><false/>            <!-- Tắt sử dụng domain tùy chỉnh iCloud Mail -->
+      <key>allowiCloudCalendar</key><false/>                <!-- Tắt lịch iCloud -->
+      <key>allowiCloudMail</key><false/>                    <!-- Tắt mail iCloud -->
+      <key>allowiCloudReminders</key><false/>               <!-- Tắt nhắc nhở iCloud -->
+
+      <!-- 🧩 ỨNG DỤNG APPLE MẶC ĐỊNH -->
+      <key>allowNews</key><false/>                          <!-- Tắt ứng dụng News -->
+      <key>allowPodcasts</key><false/>                      <!-- Tắt ứng dụng Podcasts -->
+      <key>allowiTunes</key><false/>                        <!-- Tắt iTunes Store -->
+      <key>allowGameCenter</key><false/>                    <!-- Tắt Game Center -->
+      <key>allowBookstore</key><false/>                     <!-- Tắt App Store mục Sách -->
+      <key>allowBookstoreErotica</key><false/>              <!-- Chặn nội dung sách người lớn -->
+      <key>allowMusicService</key><false/>                  <!-- Tắt Apple Music -->
+      <key>allowRadioService</key><false/>                  <!-- Tắt Radio (Apple Music Radio) -->
+
+      <!-- ⌚ PHỤ KIỆN & APPLE WATCH -->
+      <key>allowPairedWatch</key><false/>                   <!-- Tắt ghép nối Apple Watch -->
+
+      <!-- 🔁 ỨNG DỤNG CHẠY NỀN -->
+      <key>allowBackgroundAppRefresh</key><false/>          <!-- Tắt làm mới ứng dụng nền -->
+    </dict>
+  </array>
+</dict>
+</plist>

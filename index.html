@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tải cấu hình fix lag cho iPhone, giúp cải thiện hiệu suất và trải nghiệm sử dụng.">
+    <meta name="keywords" content="fix lag, iPhone, cấu hình, tải về, hiệu suất, cải thiện">
+    <meta name="author" content="duyvinh09">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <title>Tải Cấu Hình Fix Lag iPhone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .btn-download {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .btn-download:active {
+            transform: translateY(-1px);
+        }
+        .btn-download::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.4s;
+            background-color: #3b82f6;
+        }
+        .btn-download:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <div class="p-8 text-center">
+            <div class="flex justify-center mb-6">
+                <div class="bg-blue-100 p-4 rounded-full">
+                    <i class="fas fa-mobile-alt text-blue-600 text-4xl"></i>
+                </div>
+            </div>
+            
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">Cấu Hình Fix Lag iPhone</h1>
+            <p class="text-gray-600 mb-6">Chạm vào nút bên dưới để tải cấu hình chỉ dành riêng cho iPhone</p>
+            
+            <div class="mt-8">
+                <a href="/fixlagIOS.mobileconfig" download="fixlagIOS.mobileconfig" class="btn-download pulse-animation inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300">
+                    <i class="fas fa-download mr-2"></i> TẢI CẤU HÌNH NGAY
+                </a>
+            </div>
+            
+            <div class="mt-8 text-sm text-gray-500 flex items-center justify-center">
+                <i class="fas fa-info-circle mr-2"></i>
+                <span>Chỉ dành cho thiết bị iPhone, iPad chạy iOS</span>
+            </div>
+        </div>
+        
+        <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
+            <div class="flex items-center justify-between text-xs text-gray-500">
+                <span>Bảo mật 100%</span>
+                <span>•</span>
+                <span>Không chứa mã độc</span>
+                <span>•</span>
+                <span>Dễ dàng cài đặt</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.btn-download').addEventListener('click', function() {
+            this.classList.remove('pulse-animation');
+            setTimeout(() => {
+                this.classList.add('pulse-animation');
+            }, 100);
+        });
+    </script>
+</body>
+</html>
