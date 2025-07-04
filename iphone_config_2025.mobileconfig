@@ -102,14 +102,11 @@
       <key>allowPassbookWhileLocked</key><false/>
       <!-- KẾT NỐI & TRUYỀN DỮ LIỆU -->
       <key>allowAirPlayIncomingRequests</key><false/>
-      <key>forceAirPlayOutgoingRequestsPairingPassword</key><true/>
-      <key>forceAirPlayIncomingRequestsPairingPassword</key><true/>
       <key>forceAirDropUnmanaged</key><true/>
       <!-- BẢO MẬT -->
       <key>allowAutoUnlock</key><false/>
       <key>allowFindMyDeviceModification</key><false/>
       <key>allowRemoteScreenObservation</key><false/>
-      <key>allowFingerprintForUnlock</key><false/>
       <key>allowEnterpriseAppTrust</key><false/>
       <key>allowUntrustedTLSPrompt</key><false/>
       <key>forceEncryptedBackup</key><true/>
@@ -118,8 +115,6 @@
       <key>allowAutomaticAppUpdates</key><false/>
       <key>allowAppRating</key><false/>
       <key>allowUnmanagedAppBackup</key><false/>
-      <key>allowInAppPurchases</key><false/>
-      <key>forceITunesStorePasswordEntry</key><true/>
       <key>allowGlobalBackgroundFetchWhenRoaming</key><false/>
       <!-- DỊCH VỤ iCLOUD -->
       <key>allowCloudBackup</key><false/>
@@ -134,8 +129,6 @@
       <key>allowPhotoStream</key><false/>
       <key>allowSharedStream</key><false/>
       <key>allowCloudKeychainSync</key><false/>
-      <!-- ẢNH -->
-      <key>allowCamera</key><false/>
       <!-- SÁCH DOANH NGHIỆP -->
       <key>allowEnterpriseBookBackup</key><false/>
       <key>allowEnterpriseBookMetadataSync</key><false/>
@@ -151,12 +144,6 @@
       <!-- GIỚI HẠN NỘI DUNG -->
       <key>ratingRegion</key>
       <string>us</string>
-      <key>ratingMovies</key>
-      <integer>300</integer> <!-- PG-13 -->
-      <key>ratingTVShows</key>
-      <integer>400</integer> <!-- TV-PG -->
-      <key>ratingApps</key>
-      <integer>300</integer> <!-- 12+ -->
     </dict>
   </array>
 </dict>
