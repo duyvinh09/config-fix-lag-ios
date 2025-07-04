@@ -11,16 +11,16 @@
   <key>PayloadUUID</key>
   <string>8F9A2C1D-7E3B-4A9C-B2E8-6C4F1D2E9B7A</string>
   <key>PayloadDisplayName</key>
-  <string>Cấu Hình Tối Ưu iPhone "Mượt Như Mơ - Pin Trâu - Mát Lạnh"</string>
+  <string>Cấu Hình Tối Ưu iPhone "Mượt + Pin Trâu"</string>
   <key>PayloadDescription</key>
-  <string>🔥 File cấu hình tối ưu iPhone cho hiệu năng cao, tiết kiệm pin, và quyền riêng tư. Tắt các dịch vụ nền không cần thiết, chặn quảng cáo, và tối ưu DNS. Tương thích mọi dòng iPhone, không cần jailbreak. Hỗ trợ: t.me/duyvinh09.</string>
+  <string>Giảm lag, tăng pin, chặn quảng cáo - Không cần jailbreak</string>
   <key>PayloadOrganization</key>
-  <string>Phiên bản Premium bởi Đinh Duy Vinh</string>
+  <string>Đinh Duy Vinh</string>
   <key>PayloadRemovalDisallowed</key>
   <false/>
   <key>PayloadContent</key>
   <array>
-    <!-- DNS Settings -->
+    <!-- DNS Settings (Vẫn hoạt động tốt) -->
     <dict>
       <key>PayloadType</key>
       <string>com.apple.dnsSettings.managed</string>
@@ -31,7 +31,7 @@
       <key>PayloadUUID</key>
       <string>4C7E8D9F-3A2B-4E5C-9F1A-6D2C8B0E7F4A</string>
       <key>PayloadDisplayName</key>
-      <string>DNS Tối Ưu Gaming</string>
+      <string>DNS Tối Ưu</string>
       <key>DNSSettings</key>
       <dict>
         <key>DNSProtocol</key>
@@ -47,20 +47,10 @@
           <string>8.8.8.8</string>
           <string>8.8.4.4</string>
         </array>
-        <key>SupplementalMatchDomains</key>
-        <array>
-          <string>apple.com</string>
-          <string>icloud.com</string>
-        </array>
-        <key>SupplementalMatchDomainsNoSearch</key>
-        <array>
-          <string>ads.google.com</string>
-          <string>doubleclick.net</string>
-          <string>ads.apple.com</string>
-        </array>
       </dict>
     </dict>
-    <!-- Restrictions -->
+
+    <!-- Restrictions (Chỉ giữ lại các key hoạt động) -->
     <dict>
       <key>PayloadType</key>
       <string>com.apple.applicationaccess</string>
@@ -72,67 +62,34 @@
       <string>9E2F7C1A-5B3D-4F8E-A2C9-7F0D6A1B8E5C</string>
       <key>PayloadEnabled</key>
       <true/>
-      <!-- QUYỀN RIÊNG TƯ & THEO DÕI -->
-      <key>allowAppTrackingTransparency</key><false/>
-      <key>allowPersonalizedAds</key><false/>
-      <key>allowAnalytics</key><false/>
-      <key>allowAppAnalytics</key><false/>
-      <key>allowCrashReporting</key><false/>
-      <key>allowDiagnosticSubmission</key><false/>
-      <!-- DỊCH VỤ VỊ TRÍ & CHUYỂN ĐỘNG -->
-      <key>allowMotionAndFitness</key><false/>
-      <key>allowNearbyInteraction</key><false/>
-      <key>allowProximitySetupToNewDevice</key><false/>
-      <!-- TRỢ LÝ & NHẬP LIỆU -->
-      <key>allowSiriSuggestions</key><false/>
-      <key>allowAssistantWhileLocked</key><false/>
-      <key>allowAssistantUserGeneratedContent</key><false/>
-      <key>allowDictation</key><false/>
-      <key>allowVoiceDialing</key><false/>
-      <!-- HÀNH VI & TÍNH NĂNG LIÊN KẾT -->
-      <key>allowActivityContinuation</key><false/>
-      <key>allowUniversalClipboard</key><false/>
-      <key>allowHandoff</key><false/>
-      <!-- MÀN HÌNH KHÓA & GIAO DIỆN -->
-      <key>allowWallpaperModification</key><false/>
-      <key>allowLockScreenNotificationsView</key><false/>
-      <key>allowLockScreenControlCenter</key><false/>
-      <key>allowLockScreenTodayView</key><false/>
-      <key>allowPassbookWhileLocked</key><false/>
-      <!-- KẾT NỐI & TRUYỀN DỮ LIỆU -->
-      <key>allowAirPlayIncomingRequests</key><false/>
-      <!-- BẢO MẬT -->
-      <key>allowAutoUnlock</key><false/>
-      <key>allowFindMyDeviceModification</key><false/>
-      <key>allowRemoteScreenObservation</key><false/>
-      <!-- CẬP NHẬT & QUẢN LÝ ỨNG DỤNG -->
-      <key>allowOTAPKIUpdates</key><false/>
-      <key>allowAutomaticAppUpdates</key><false/>
-      <key>allowAppRating</key><false/>
-      <key>allowUnmanagedAppBackup</key><false/>
-      <!-- DỊCH VỤ iCLOUD -->
-      <key>allowCloudBackup</key><false/>
-      <key>allowCloudDocuments</key><false/>
-      <key>allowCloudDocumentSync</key><false/>
-      <key>allowCloudCustomDomains</key><false/>
-      <key>allowiCloudCalendar</key><false/>
-      <key>allowiCloudMail</key><false/>
-      <key>allowiCloudReminders</key><false/>
-      <key>allowSharedKeystores</key><false/>
-      <!-- ẢNH -->
-      <key>allowPhotoStream</key><false/>
-      <!-- SÁCH DOANH NGHIỆP -->
-      <key>allowEnterpriseBookBackup</key><false/>
-      <key>allowEnterpriseBookMetadataSync</key><false/>
-      <!-- ỨNG DỤNG APPLE MẶC ĐỊNH -->
-      <key>allowNews</key><false/>
-      <key>allowPodcasts</key><false/>
-      <key>allowiTunes</key><false/>
-      <key>allowGameCenter</key><false/>
-      <key>allowBookstore</key><false/>
-      <key>allowBookstoreErotica</key><false/>
-      <key>allowMusicService</key><false/>
-      <key>allowRadioService</key><false/>
+
+      <!-- === NHÓM TIẾT KIỆM PIN === -->
+      <key>allowBackgroundAppRefresh</key><false/>  <!-- Tắt làm mới nền -->
+      <key>allowPhotoStream</key><false/>          <!-- Tắt Photo Stream -->
+      <key>allowCloudBackup</key><false/>          <!-- Tắt sao lưu iCloud -->
+      <key>allowDiagnosticSubmission</key><false/><!-- Tắt gửi dữ liệu chẩn đoán -->
+
+      <!-- === NHÓM BẢO MẬT === -->
+      <key>allowLockScreenControlCenter</key><false/> <!-- Chặn Control Center khi khóa -->
+      <key>allowLockScreenTodayView</key><false/>     <!-- Chặn Widget khi khóa -->
+      <key>allowAssistantWhileLocked</key><false/>    <!-- Chặn Siri khi khóa -->
+      <key>allowPassbookWhileLocked</key><false/>     <!-- Chặn Wallet khi khóa -->
+
+      <!-- === NHÓM HIỆU NĂNG === -->
+      <key>allowHandoff</key><false/>                <!-- Tắt Handoff -->
+      <key>allowActivityContinuation</key><false/>    <!-- Tắt tiếp tục hoạt động đa thiết bị -->
+      <key>allowRemoteScreenObservation</key><false/><!-- Chặn theo dõi màn hình từ xa -->
+
+      <!-- === NHÓM HẠN CHẾ KHÔNG CẦN THIẾT === -->
+      <key>allowBookstoreErotica</key><false/>        <!-- Chặn nội dung người lớn -->
+      <key>allowEnterpriseBookBackup</key><false/>    <!-- Tắt sao lưu sách doanh nghiệp -->
+      <key>allowEnterpriseBookMetadataSync</key><false/><!-- Tắt đồng bộ ghi chú sách -->
+      <key>allowOTAPKIUpdates</key><false/>           <!-- Chặn cập nhật chứng chỉ OTA -->
+
+      <!-- === CÁC KEY MỚI BỔ SUNG (iOS 12+) === -->
+      <key>allowPasswordAutoFill</key><false/>        <!-- Tắt tự động điền mật khẩu -->
+      <key>allowPasswordSharing</key><false/>         <!-- Chặn chia sẻ mật khẩu qua AirDrop -->
+      <key>allowAutomaticAppUpdates</key><false/>     <!-- Tắt cập nhật app tự động -->
     </dict>
   </array>
 </dict>
