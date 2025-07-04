@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadIdentifier</key>
+  <string>com.duyvinh09config.gaming.2025</string>
+  <key>PayloadUUID</key>
+  <string>8F9A2C1D-7E3B-4A9C-B2E8-6C4F1D2E9B7A</string>
+  <key>PayloadDisplayName</key>
+  <string>Cấu Hình Tối Ưu iPhone "Mượt Như Mơ - Pin Trâu - Mát Lạnh"</string>
+  <key>PayloadDescription</key>
+  <string>🔥 File cấu hình tối ưu iPhone cho hiệu năng cao, tiết kiệm pin, và quyền riêng tư. Tắt các dịch vụ nền không cần thiết, chặn quảng cáo, và tối ưu DNS. Tương thích mọi dòng iPhone, không cần jailbreak. Hỗ trợ: t.me/duyvinh09.</string>
+  <key>PayloadOrganization</key>
+  <string>Phiên bản Premium bởi Đinh Duy Vinh</string>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+  <key>PayloadContent</key>
+  <array>
+    <!-- DNS Settings -->
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.dnsSettings.managed</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadIdentifier</key>
+      <string>com.duyvinh09config.dns.2025</string>
+      <key>PayloadUUID</key>
+      <string>4C7E8D9F-3A2B-4E5C-9F1A-6D2C8B0E7F4A</string>
+      <key>PayloadDisplayName</key>
+      <string>DNS Tối Ưu Gaming</string>
+      <key>DNSSettings</key>
+      <dict>
+        <key>DNSProtocol</key>
+        <string>HTTPS</string>
+        <key>ServerName</key>
+        <string>1dot1dot1dot1.cloudflare-dns.com</string>
+        <key>ServerURL</key>
+        <string>https://cloudflare-dns.com/dns-query</string>
+        <key>ServerAddresses</key>
+        <array>
+          <string>1.1.1.1</string>
+          <string>1.0.0.1</string>
+          <string>8.8.8.8</string>
+          <string>8.8.4.4</string>
+        </array>
+        <key>SupplementalMatchDomains</key>
+        <array>
+          <string>apple.com</string>
+          <string>icloud.com</string>
+        </array>
+        <key>SupplementalMatchDomainsNoSearch</key>
+        <array>
+          <string>ads.google.com</string>
+          <string>doubleclick.net</string>
+          <string>ads.apple.com</string>
+        </array>
+      </dict>
+    </dict>
+    <!-- Restrictions -->
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.applicationaccess</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadIdentifier</key>
+      <string>com.duyvinh09config.restrict.2025</string>
+      <key>PayloadUUID</key>
+      <string>9E2F7C1A-5B3D-4F8E-A2C9-7F0D6A1B8E5C</string>
+      <key>PayloadEnabled</key>
+      <true/>
+      <!-- QUYỀN RIÊNG TƯ & THEO DÕI -->
+      <key>allowAppTrackingTransparency</key><false/>
+      <key>allowAdTracking</key><false/>
+      <key>allowPersonalizedAds</key><false/>
+      <key>allowAnalytics</key><false/>
+      <key>allowAppAnalytics</key><false/>
+      <key>allowCrashReporting</key><false/>
+      <key>allowDiagnosticSubmission</key><false/>
+      <!-- DỊCH VỤ VỊ TRÍ & CHUYỂN ĐỘNG -->
+      <key>allowedLocationApps</key>
+      <array>
+        <string>com.apple.Maps</string>
+        <string>com.google.Maps</string>
+      </array>
+      <key>allowMotionAndFitness</key><false/>
+      <key>allowNearbyDevices</key><false/>
+      <key>allowNearbyInteraction</key><false/>
+      <key>allowProximitySetupToNewDevice</key><false/>
+      <!-- TRỢ LÝ & NHẬP LIỆU -->
+      <key>allowSiriSuggestions</key><false/>
+      <key>allowAssistantWhileLocked</key><false/>
+      <key>allowAssistantUserGeneratedContent</key><false/>
+      <key>allowDictation</key><false/>
+      <key>allowVoiceDialing</key><false/>
+      <!-- HÀNH VI & TÍNH NĂNG LIÊN KẾT -->
+      <key>allowActivityContinuation</key><false/>
+      <key>allowUniversalClipboard</key><false/>
+      <key>allowHandoff</key><false/>
+      <!-- MÀN HÌNH KHÓA & GIAO DIỆN -->
+      <key>allowWallpaperModification</key><false/>
+      <key>allowLockScreenNotificationsView</key><false/>
+      <key>allowLockScreenControlCenter</key><false/>
+      <key>allowLockScreenTodayView</key><false/>
+      <key>allowPassbookWhileLocked</key><false/>
+      <!-- KẾT NỐI & TRUYỀN DỮ LIỆU -->
+      <key>allowAirDrop</key><false/>
+      <key>allowAirPlay</key><false/>
+      <key>allowAirPlayIncomingRequests</key><false/>
+      <key>allowBluetoothModification</key><false/>
+      <key>allowAppCellularDataModification</key><false/>
+      <!-- BẢO MẬT -->
+      <key>allowAutoUnlock</key><false/>
+      <key>allowFindMyDeviceModification</key><false/>
+      <key>allowRemoteScreenObservation</key><false/>
+      <!-- CẬP NHẬT & QUẢN LÝ ỨNG DỤNG -->
+      <key>allowOTAPKIUpdates</key><false/>
+      <key>allowAutomaticAppUpdates</key><false/>
+      <key>allowAppRating</key><false/>
+      <key>allowUnmanagedAppBackup</key><false/>
+      <!-- DỊCH VỤ iCLOUD -->
+      <key>allowCloudBackup</key><false/>
+      <key>allowCloudDocuments</key><false/>
+      <key>allowCloudDocumentSync</key><false/>
+      <key>allowCloudCustomDomains</key><false/>
+      <key>allowiCloudCalendar</key><false/>
+      <key>allowiCloudMail</key><false/>
+      <key>allowiCloudReminders</key><false/>
+      <key>allowSharedKeystores</key><false/>
+      <!-- ẢNH -->
+      <key>allowPhotoStream</key><false/>
+      <!-- SÁCH DOANH NGHIỆP -->
+      <key>allowEnterpriseBookBackup</key><false/>
+      <key>allowEnterpriseBookMetadataSync</key><false/>
+      <!-- ỨNG DỤNG APPLE MẶC ĐỊNH -->
+      <key>allowNews</key><false/>
+      <key>allowPodcasts</key><false/>
+      <key>allowiTunes</key><false/>
+      <key>allowGameCenter</key><false/>
+      <key>allowBookstore</key><false/>
+      <key>allowBookstoreErotica</key><false/>
+      <key>allowMusicService</key><false/>
+      <key>allowRadioService</key><false/>
+      <!-- PHỤ KIỆN & APPLE WATCH -->
+      <key>allowPairedWatch</key><false/>
+      <!-- ỨNG DỤNG CHẠY NỀN -->
+      <key>allowBackgroundAppRefresh</key><false/>
+    </dict>
+  </array>
+</dict>
+</plist>
