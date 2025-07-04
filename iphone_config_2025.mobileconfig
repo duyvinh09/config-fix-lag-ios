@@ -80,13 +80,7 @@
       <key>allowCrashReporting</key><false/>
       <key>allowDiagnosticSubmission</key><false/>
       <!-- DỊCH VỤ VỊ TRÍ & CHUYỂN ĐỘNG -->
-      <key>allowedLocationApps</key>
-      <array>
-        <string>com.apple.Maps</string>
-        <string>com.google.Maps</string>
-      </array>
       <key>allowMotionAndFitness</key><false/>
-      <key>allowNearbyDevices</key><false/>
       <key>allowNearbyInteraction</key><false/>
       <key>allowProximitySetupToNewDevice</key><false/>
       <!-- TRỢ LÝ & NHẬP LIỆU -->
@@ -106,11 +100,7 @@
       <key>allowLockScreenTodayView</key><false/>
       <key>allowPassbookWhileLocked</key><false/>
       <!-- KẾT NỐI & TRUYỀN DỮ LIỆU -->
-      <key>allowAirDrop</key><false/>
-      <key>allowAirPlay</key><false/>
       <key>allowAirPlayIncomingRequests</key><false/>
-      <key>allowBluetoothModification</key><false/>
-      <key>allowAppCellularDataModification</key><false/>
       <!-- BẢO MẬT -->
       <key>allowAutoUnlock</key><false/>
       <key>allowFindMyDeviceModification</key><false/>
@@ -126,7 +116,7 @@
       <key>allowCloudDocumentSync</key><false/>
       <key>allowCloudCustomDomains</key><false/>
       <key>allowiCloudCalendar</key><false/>
-      <key>allowiCloudMail</key Dali><false/>
+      <key>allowiCloudMail</key><false/>
       <key>allowiCloudReminders</key><false/>
       <key>allowSharedKeystores</key><false/>
       <!-- ẢNH -->
@@ -143,10 +133,6 @@
       <key>allowBookstoreErotica</key><false/>
       <key>allowMusicService</key><false/>
       <key>allowRadioService</key><false/>
-      <!-- PHỤ KIỆN & APPLE WATCH -->
-      <key>allowPairedWatch</key><false/>
-      <!-- ỨNG DỤNG CHẠY NỀN -->
-      <key>allowBackgroundAppRefresh</key><false/>
     </dict>
   </array>
 </dict>
