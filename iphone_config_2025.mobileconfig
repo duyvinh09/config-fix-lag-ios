@@ -35,28 +35,28 @@
       <key>DNSSettings</key>
       <dict>
         <key>DNSProtocol</key>
-        <string>HTTPS</string>
+        <string>HTTPS</string> <!-- Sử dụng giao thức DNS-over-HTTPS để tăng bảo mật và tốc độ -->
         <key>ServerName</key>
-        <string>1dot1dot1dot1.cloudflare-dns.com</string>
+        <string>1dot1dot1dot1.cloudflare-dns.com</string> <!-- Tên máy chủ DNS Cloudflare -->
         <key>ServerURL</key>
-        <string>https://cloudflare-dns.com/dns-query</string>
+        <string>https://cloudflare-dns.com/dns-query</string> <!-- URL cho DNS-over-HTTPS -->
         <key>ServerAddresses</key>
         <array>
-          <string>1.1.1.1</string>
-          <string>1.0.0.1</string>
-          <string>8.8.8.8</string>
-          <string>8.8.4.4</string>
+          <string>1.1.1.1</string> <!-- Cloudflare DNS chính, giảm ping, chặn quảng cáo -->
+          <string>1.0.0.1</string> <!-- Cloudflare DNS phụ, tăng độ tin cậy -->
+          <string>8.8.8.8</string> <!-- Google DNS chính, dự phòng tốc độ cao -->
+          <string>8.8.4.4</string> <!-- Google DNS phụ, đảm bảo kết nối ổn định -->
         </array>
         <key>SupplementalMatchDomains</key>
         <array>
-          <string>apple.com</string>
-          <string>icloud.com</string>
+          <string>apple.com</string> <!-- Ưu tiên DNS cho Apple services -->
+          <string>icloud.com</string> <!-- Ưu tiên DNS cho iCloud services -->
         </array>
         <key>SupplementalMatchDomainsNoSearch</key>
         <array>
-          <string>ads.google.com</string>
-          <string>doubleclick.net</string>
-          <string>ads.apple.com</string>
+          <string>ads.google.com</string> <!-- Chặn miền quảng cáo Google -->
+          <string>doubleclick.net</string> <!-- Chặn miền quảng cáo DoubleClick -->
+          <string>ads.apple.com</string> <!-- Chặn miền quảng cáo Apple -->
         </array>
       </dict>
     </dict>
@@ -73,77 +73,60 @@
       <key>PayloadEnabled</key>
       <true/>
       <!-- QUYỀN RIÊNG TƯ & THEO DÕI -->
-      <key>allowAppTrackingTransparency</key><false/>
-      <key>allowPersonalizedAds</key><false/>
-      <key>allowAnalytics</key><false/>
-      <key>allowAppAnalytics</key><false/>
-      <key>allowCrashReporting</key><false/>
-      <key>allowDiagnosticSubmission</key><false/>
-      <key>forceLimitAdTracking</key><true/>
+      <key>allowAppTrackingTransparency</key><false/> <!-- Chặn yêu cầu theo dõi giữa các ứng dụng, tăng quyền riêng tư -->
+      <key>allowPersonalizedAds</key><false/> <!-- Tắt quảng cáo cá nhân hóa, giảm theo dõi hành vi người dùng -->
+      <key>allowAnalytics</key><false/> <!-- Tắt gửi dữ liệu phân tích sử dụng thiết bị cho Apple -->
+      <key>allowAppAnalytics</key><false/> <!-- Tắt gửi dữ liệu phân tích ứng dụng, tiết kiệm dữ liệu và tăng quyền riêng tư -->
+      <key>allowCrashReporting</key><false/> <!-- Tắt gửi báo cáo lỗi ứng dụng, giảm hoạt động nền -->
+      <key>allowDiagnosticSubmission</key><false/> <!-- Tắt gửi dữ liệu chẩn đoán hệ thống, tăng quyền riêng tư -->
+      <key>forceLimitAdTracking</key><true/> <!-- Buộc giới hạn theo dõi quảng cáo, tối ưu quyền riêng tư -->
       <!-- DỊCH VỤ VỊ TRÍ & CHUYỂN ĐỘNG -->
-      <key>allowMotionAndFitness</key><false/>
-      <key>allowNearbyInteraction</key><false/>
-      <key>allowProximitySetupToNewDevice</key><false/>
+      <key>allowMotionAndFitness</key><false/> <!-- Tắt cảm biến chuyển động và sức khỏe, tiết kiệm pin -->
+      <key>allowNearbyInteraction</key><false/> <!-- Tắt tương tác với thiết bị gần qua chip U1 (Ultra Wideband), giảm sử dụng CPU -->
       <!-- TRỢ LÝ & NHẬP LIỆU -->
-      <key>allowSiriSuggestions</key><false/>
-      <key>allowAssistantWhileLocked</key><false/>
-      <key>allowAssistantUserGeneratedContent</key><false/>
-      <key>allowDictation</key><false/>
-      <key>allowVoiceDialing</key><false/>
+      <key>allowSiri</key><false/> <!-- Tắt hoàn toàn Siri, giảm sử dụng tài nguyên và tăng quyền riêng tư -->
+      <key>allowSiriSuggestions</key><false/> <!-- Tắt gợi ý của Siri, giảm xử lý nền và tăng quyền riêng tư -->
+      <key>allowAssistantWhileLocked</key><false/> <!-- Tắt Siri khi màn hình khóa, tăng bảo mật -->
+      <key>allowVoiceDialing</key><false/> <!-- Tắt quay số bằng giọng nói từ màn hình khóa, tăng bảo mật -->
       <!-- HÀNH VI & TÍNH NĂNG LIÊN KẾT -->
-      <key>allowActivityContinuation</key><false/>
-      <key>allowUniversalClipboard</key><false/>
-      <key>allowHandoff</key><false/>
+      <key>allowActivityContinuation</key><false/> <!-- Tắt Handoff, ngăn chuyển tác vụ giữa các thiết bị, tiết kiệm pin -->
+      <key>allowUniversalClipboard</key><false/> <!-- Tắt clipboard đa thiết bị, ngăn copy-paste giữa iPhone và Mac, tăng bảo mật -->
+      <key>allowHandoff</key><false/> <!-- Tắt hoàn toàn Handoff, giảm kết nối nền -->
       <!-- MÀN HÌNH KHÓA & GIAO DIỆN -->
-      <key>allowWallpaperModification</key><false/>
-      <key>allowLockScreenNotificationsView</key><false/>
-      <key>allowLockScreenControlCenter</key><false/>
-      <key>allowLockScreenTodayView</key><false/>
-      <key>allowPassbookWhileLocked</key><false/>
+      <key>allowLockScreenNotificationsView</key><false/> <!-- Tắt xem thông báo trên màn hình khóa, tăng quyền riêng tư -->
+      <key>allowLockScreenControlCenter</key><false/> <!-- Tắt truy cập Control Center từ màn hình khóa, tăng bảo mật -->
+      <key>allowLockScreenTodayView</key><false/> <!-- Tắt Today View (widget) trên màn hình khóa, giảm xử lý giao diện -->
+      <key>allowPassbookWhileLocked</key><false/> <!-- Tắt Apple Wallet trên màn hình khóa, tăng bảo mật -->
       <!-- KẾT NỐI & TRUYỀN DỮ LIỆU -->
-      <key>allowAirPlayIncomingRequests</key><false/>
-      <key>forceAirDropUnmanaged</key><true/>
+      <key>allowAirPlayIncomingRequests</key><false/> <!-- Chặn yêu cầu chiếu màn hình AirPlay đến thiết bị, tăng bảo mật -->
       <!-- BẢO MẬT -->
-      <key>allowAutoUnlock</key><false/>
-      <key>allowFindMyDeviceModification</key><false/>
-      <key>allowRemoteScreenObservation</key><false/>
-      <key>allowEnterpriseAppTrust</key><false/>
-      <key>allowUntrustedTLSPrompt</key><false/>
-      <key>forceEncryptedBackup</key><true/>
+      <key>allowFindMyDeviceModification</key><false/> <!-- Chặn thay đổi cài đặt Find My iPhone, tăng bảo mật -->
+      <key>allowRemoteScreenObservation</key><false/> <!-- Tắt theo dõi hoặc điều khiển màn hình từ xa, tăng quyền riêng tư -->
+      <key>allowEnterpriseAppTrust</key><false/> <!-- Tắt tin cậy ứng dụng doanh nghiệp, ngăn cài ứng dụng không rõ nguồn gốc -->
+      <key>allowUntrustedTLSPrompt</key><false/> <!-- Tự động từ chối chứng chỉ HTTPS không tin cậy, tăng bảo mật -->
+      <key>forceEncryptedBackup</key><true/> <!-- Buộc mã hóa bản sao lưu, bảo vệ dữ liệu khi sao lưu -->
       <!-- CẬP NHẬT & QUẢN LÝ ỨNG DỤNG -->
-      <key>allowOTAPKIUpdates</key><false/>
-      <key>allowAutomaticAppUpdates</key><false/>
-      <key>allowAppRating</key><false/>
-      <key>allowUnmanagedAppBackup</key><false/>
-      <key>allowGlobalBackgroundFetchWhenRoaming</key><false/>
+      <key>allowOTAPKIUpdates</key><false/> <!-- Tắt cập nhật chứng chỉ PKI qua OTA, giảm hoạt động nền -->
+      <key>allowAutomaticAppUpdates</key><false/> <!-- Tắt cập nhật ứng dụng tự động, tiết kiệm dữ liệu và kiểm soát phiên bản -->
+      <key>allowAppRating</key><false/> <!-- Tắt yêu cầu đánh giá ứng dụng trên App Store, giảm phiền nhiễu -->
+      <key>allowUnmanagedAppBackup</key><false/> <!-- Tắt sao lưu ứng dụng không được quản lý, tăng quyền riêng tư -->
+      <key>allowGlobalBackgroundFetchWhenRoaming</key><false/> <!-- Tắt làm mới ứng dụng nền khi roaming, tiết kiệm pin và dữ liệu -->
       <!-- DỊCH VỤ iCLOUD -->
-      <key>allowCloudBackup</key><false/>
-      <key>allowCloudDocuments</key><false/>
-      <key>allowCloudDocumentSync</key><false/>
-      <key>allowCloudCustomDomains</key><false/>
-      <key>allowiCloudCalendar</key><false/>
-      <key>allowiCloudMail</key><false/>
-      <key>allowiCloudReminders</key><false/>
-      <key>allowSharedKeystores</key><false/>
-      <key>allowCloudPhotoLibrary</key><false/>
-      <key>allowPhotoStream</key><false/>
-      <key>allowSharedStream</key><false/>
-      <key>allowCloudKeychainSync</key><false/>
+      <key>allowCloudBackup</key><false/> <!-- Tắt sao lưu iCloud, tiết kiệm băng thông và tăng quyền riêng tư -->
+      <key>allowCloudDocuments</key><false/> <!-- Tắt lưu trữ tài liệu trên iCloud Drive, giảm sử dụng dữ liệu -->
+      <key>allowCloudDocumentSync</key><false/> <!-- Tắt đồng bộ tài liệu với iCloud, giảm hoạt động nền -->
+      <key>allowCloudCustomDomains</key><false/> <!-- Tắt sử dụng domain tùy chỉnh cho iCloud Mail, giảm kết nối nền -->
+      <key>allowiCloudCalendar</key><false/> <!-- Tắt đồng bộ lịch iCloud, tiết kiệm pin -->
+      <key>allowiCloudMail</key><false/> <!-- Tắt đồng bộ mail iCloud, giảm sử dụng dữ liệu -->
+      <key>allowiCloudReminders</key><false/> <!-- Tắt đồng bộ nhắc nhở iCloud, giảm hoạt động nền -->
+      <key>allowSharedKeystores</key><false/> <!-- Tắt đồng bộ Chuỗi khóa iCloud, tăng quyền riêng tư -->
+      <key>allowCloudPhotoLibrary</key><false/> <!-- Tắt Thư viện Ảnh iCloud, giảm sử dụng băng thông -->
+      <key>allowPhotoStream</key><false/> <!-- Tắt Photo Stream, giảm đồng bộ ảnh -->
+      <key>allowSharedStream</key><false/> <!-- Tắt Shared Photo Stream, tiết kiệm dữ liệu -->
+      <key>allowCloudKeychainSync</key><false/> <!-- Tắt đồng bộ Chuỗi khóa iCloud, tăng bảo mật -->
       <!-- SÁCH DOANH NGHIỆP -->
-      <key>allowEnterpriseBookBackup</key><false/>
-      <key>allowEnterpriseBookMetadataSync</key><false/>
-      <!-- ỨNG DỤNG APPLE MẶC ĐỊNH -->
-      <key>allowNews</key><false/>
-      <key>allowPodcasts</key><false/>
-      <key>allowiTunes</key><false/>
-      <key>allowGameCenter</key><false/>
-      <key>allowBookstore</key><false/>
-      <key>allowBookstoreErotica</key><false/>
-      <key>allowMusicService</key><false/>
-      <key>allowRadioService</key><false/>
-      <!-- GIỚI HẠN NỘI DUNG -->
-      <key>ratingRegion</key>
-      <string>us</string>
+      <key>allowEnterpriseBookBackup</key><false/> <!-- Tắt sao lưu sách doanh nghiệp, giảm hoạt động nền -->
+      <key>allowEnterpriseBookMetadataSync</key><false/> <!-- Tắt đồng bộ ghi chú và phần tô sáng sách doanh nghiệp -->
     </dict>
   </array>
 </dict>
