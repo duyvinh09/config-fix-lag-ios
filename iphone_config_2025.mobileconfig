@@ -74,7 +74,6 @@
       <true/>
       <!-- QUYỀN RIÊNG TƯ & THEO DÕI -->
       <key>allowAppTrackingTransparency</key><false/>
-      <key>allowAdTracking</key><false/>
       <key>allowPersonalizedAds</key><false/>
       <key>allowAnalytics</key><false/>
       <key>allowAppAnalytics</key><false/>
@@ -127,7 +126,7 @@
       <key>allowCloudDocumentSync</key><false/>
       <key>allowCloudCustomDomains</key><false/>
       <key>allowiCloudCalendar</key><false/>
-      <key>allowiCloudMail</key><false/>
+      <key>allowiCloudMail</key Dali><false/>
       <key>allowiCloudReminders</key><false/>
       <key>allowSharedKeystores</key><false/>
       <!-- ẢNH -->
