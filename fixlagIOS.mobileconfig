@@ -113,6 +113,7 @@ Một lần cài - Lợi ích mãi mãi!
 
       <!-- 🎙️ TRỢ LÝ & NHẬP LIỆU -->
       <key>allowSiri</key><false/>                          <!-- Tắt Siri -->
+      <key>allowSiriSuggestions</key><false/>               <!-- Không cho phép gợi ý Siri -->
       <key>allowAssistantWhileLocked</key><false/>          <!-- Tắt Siri khi màn hình bị khóa -->
       <key>allowAssistantUserGeneratedContent</key><false/> <!-- Chặn Siri học hành vi sử dụng -->
       <key>allowDictation</key><false/>                     <!-- Tắt chức năng đọc chính tả (mic trên bàn phím) -->
@@ -148,6 +149,7 @@ Một lần cài - Lợi ích mãi mãi!
       <key>allowFindMyDevice</key><false/>                  <!-- Tắt Find My iPhone (ẩn khỏi iCloud) -->
       <key>allowFindMyDeviceModification</key><false/>      <!-- Chặn thay đổi cài đặt Find My iPhone -->
       <key>allowRemoteScreenObservation</key><false/>       <!-- Tắt điều khiển/mirror màn hình từ xa -->
+      <key>allowRemoteScreenObservation</key><false/>       <!-- Không cho phép theo dõi màn hình từ xa -->
 
       <!-- 🔧 CẬP NHẬT & QUẢN LÝ ỨNG DỤNG -->
       <key>allowSoftwareUpdate</key><false/>                <!-- Tắt cập nhật iOS -->
@@ -164,6 +166,14 @@ Một lần cài - Lợi ích mãi mãi!
       <key>allowiCloudCalendar</key><false/>                <!-- Tắt lịch iCloud -->
       <key>allowiCloudMail</key><false/>                    <!-- Tắt mail iCloud -->
       <key>allowiCloudReminders</key><false/>               <!-- Tắt nhắc nhở iCloud -->
+      <key>allowSharedKeystores</key><false/>               <!-- Không cho phép Chuỗi khoá iCloud -->
+
+      <!-- 📷 ẢNH -->
+      <key>allowPhotoStream</key><false/>                   <!-- Không cho phép Kho Ảnh -->
+
+      <!-- 📖 SÁCH DOANH NGHIỆP -->
+      <key>allowEnterpriseBookBackup</key><false/>          <!-- Không cho phép sao lưu sách doanh nghiệp -->
+      <key>allowEnterpriseBookMetadataSync</key><false/>    <!-- Không cho phép đồng bộ hoá ghi chú và phần tô sáng -->
 
       <!-- 🧩 ỨNG DỤNG APPLE MẶC ĐỊNH -->
       <key>allowNews</key><false/>                          <!-- Tắt ứng dụng News -->
