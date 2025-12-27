@@ -1,96 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tải cấu hình fix lag cho iPhone, giúp cải thiện hiệu suất và trải nghiệm sử dụng.">
-    <meta name="keywords" content="fix lag, iPhone, cấu hình, tải về, hiệu suất, cải thiện">
-    <meta name="author" content="duyvinh09">
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tải cấu hình fix lag cho iPhone, giúp cải thiện hiệu suất và trải nghiệm sử dụng." />
+    <meta name="keywords" content="fix lag, iPhone, cấu hình, tải về, hiệu suất, cải thiện" />
+    <meta name="author" content="duyvinh09" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
     <title>Tải Cấu Hình Fix Lag iPhone</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-        .btn-download {
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
+      .btn-download {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      .btn-download:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .btn-download:active {
+        transform: translateY(-1px);
+      }
+      .btn-download::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+        background-color: #3b82f6;
+      }
+      .btn-download:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
         }
-        .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        50% {
+          transform: scale(1.05);
         }
-        .btn-download:active {
-            transform: translateY(-1px);
+        100% {
+          transform: scale(1);
         }
-        .btn-download::after {
-            content: "";
-            display: inline-block;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: all 0.4s;
-            background-color: #3b82f6;
-        }
-        .btn-download:hover::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .pulse-animation {
-            animation: pulse 2s infinite;
-        }
+      }
+      .pulse-animation {
+        animation: pulse 2s infinite;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .tab-button {
+        transition: all 0.3s ease;
+      }
+      .tab-button.active {
+        background-color: #3b82f6;
+        color: white;
+      }
+      .tab-button:not(.active) {
+        background-color: #f3f4f6;
+        color: #6b7280;
+      }
+      .tab-button:not(.active):hover {
+        background-color: #e5e7eb;
+      }
     </style>
-</head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
-        <div class="p-8 text-center">
+  </head>
+  <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-md w-full">
+      <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+        <!-- Tab Navigation -->
+        <div class="flex border-b border-gray-200">
+          <button class="tab-button active flex-1 py-4 px-6 font-semibold text-sm rounded-tl-xl" data-tab="fixlag">
+            <i class="fas fa-mobile-alt mr-2"></i>Fix Lag
+          </button>
+          <button class="tab-button flex-1 py-4 px-6 font-semibold text-sm rounded-tr-xl" data-tab="blockupdate">
+            <i class="fas fa-ban mr-2"></i>Chặn Cập Nhật
+          </button>
+        </div>
+
+        <!-- Tab Content: Fix Lag -->
+        <div id="fixlag" class="tab-content active">
+          <div class="p-8 text-center">
             <div class="flex justify-center mb-6">
-                <div class="bg-blue-100 p-4 rounded-full">
-                    <i class="fas fa-mobile-alt text-blue-600 text-4xl"></i>
-                </div>
+              <div class="bg-blue-100 p-4 rounded-full">
+                <i class="fas fa-mobile-alt text-blue-600 text-4xl"></i>
+              </div>
             </div>
-            
-            <h1 class="text-2xl font-bold text-gray-800 mb-2">Cấu Hình Fix Lag iPhone</h1>
-            <p class="text-gray-600 mb-6">Chạm vào nút bên dưới để tải cấu hình chỉ dành riêng cho iPhone</p>
-            
+
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">
+              Cấu Hình Fix Lag iPhone
+            </h1>
+            <p class="text-gray-600 mb-6">
+              Chạm vào nút bên dưới để tải cấu hình chỉ dành riêng cho iPhone
+            </p>
+
             <div class="mt-8">
-                <a href="/iphone_config_2025.mobileconfig" download="iphone_config_2025.mobileconfig" class="btn-download pulse-animation inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300">
-                    <i class="fas fa-download mr-2"></i> TẢI CẤU HÌNH NGAY
-                </a>
+              <a href="/iphone_config_2025.mobileconfig" download="iphone_config_2025.mobileconfig" class="btn-download pulse-animation inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300">
+                <i class="fas fa-download mr-2"></i> TẢI CẤU HÌNH NGAY
+              </a>
             </div>
-            
+
             <div class="mt-8 text-sm text-gray-500 flex items-center justify-center">
-                <i class="fas fa-info-circle mr-2"></i>
-                <span>Chỉ dành cho thiết bị iPhone, iPad chạy iOS</span>
+              <i class="fas fa-info-circle mr-2"></i>
+              <span>Chỉ dành cho thiết bị iPhone, iPad chạy iOS</span>
             </div>
-        </div>
-        
-        <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
+          </div>
+
+          <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
             <div class="flex items-center justify-between text-xs text-gray-500">
-                <span>Bảo mật 100%</span>
-                <span>•</span>
-                <span>Không chứa mã độc</span>
-                <span>•</span>
-                <span>Dễ dàng cài đặt</span>
+              <span>Bảo mật 100%</span>
+              <span>•</span>
+              <span>Không chứa mã độc</span>
+              <span>•</span>
+              <span>Dễ dàng cài đặt</span>
             </div>
+          </div>
         </div>
+
+        <!-- Tab Content: Chặn Cập Nhật iOS -->
+        <div id="blockupdate" class="tab-content">
+          <div class="p-8 text-center">
+            <div class="flex justify-center mb-6">
+              <div class="bg-red-100 p-4 rounded-full">
+                <i class="fas fa-ban text-red-600 text-4xl"></i>
+              </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+              Chặn Cập Nhật iOS
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Tải cấu hình để chặn cập nhật iOS tự động, giữ nguyên phiên bản hiện tại
+            </p>
+
+            <div class="mt-8">
+              <a href="/no-ota18.mobileconfig" download="no-ota18.mobileconfig" class="btn-download pulse-animation inline-block px-8 py-4 bg-red-600 text-white font-semibold rounded-lg shadow-lg hover:bg-red-700 transition-all duration-300">
+                <i class="fas fa-download mr-2"></i> TẢI CẤU HÌNH CHẶN CẬP NHẬT
+              </a>
+            </div>
+
+            <div class="mt-8 text-sm text-gray-500 flex items-center justify-center">
+              <i class="fas fa-info-circle mr-2"></i>
+              <span>Ngăn chặn cập nhật OTA tự động trên iPhone, iPad</span>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
+            <div class="flex items-center justify-between text-xs text-gray-500">
+              <span>Bảo mật 100%</span>
+              <span>•</span>
+              <span>Không chứa mã độc</span>
+              <span>•</span>
+              <span>Dễ dàng cài đặt</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
-        document.querySelector('.btn-download').addEventListener('click', function() {
-            this.classList.remove('pulse-animation');
-            setTimeout(() => {
-                this.classList.add('pulse-animation');
-            }, 100);
+      // Tab switching functionality
+      document.querySelectorAll(".tab-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          const targetTab = this.getAttribute("data-tab");
+
+          // Remove active class from all buttons and content
+          document.querySelectorAll(".tab-button").forEach((btn) => {
+            btn.classList.remove("active");
+          });
+          document.querySelectorAll(".tab-content").forEach((content) => {
+            content.classList.remove("active");
+          });
+
+          // Add active class to clicked button and corresponding content
+          this.classList.add("active");
+          document.getElementById(targetTab).classList.add("active");
         });
+      });
+
+      // Button download animation
+      document.querySelectorAll(".btn-download").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.remove("pulse-animation");
+          setTimeout(() => {
+            this.classList.add("pulse-animation");
+          }, 100);
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
