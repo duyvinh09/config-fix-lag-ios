@@ -7,7 +7,7 @@
   <key>PayloadVersion</key>
   <integer>1</integer>
   <key>PayloadIdentifier</key>
-  <string>com.duyvinh09config.gaming.2025</string>
+  <string>com.duyvinh09config.gaming.2026</string>
   <key>PayloadUUID</key>
   <string>8F9A2C1D-7E3B-4A9C-B2E8-6C4F1D2E9B7A</string>
   <key>PayloadDisplayName</key>
@@ -20,46 +20,7 @@
   <false/>
   <key>PayloadContent</key>
   <array>
-    <!-- DNS Settings -->
-    <dict>
-      <key>PayloadType</key>
-      <string>com.apple.dnsSettings.managed</string>
-      <key>PayloadVersion</key>
-      <integer>1</integer>
-      <key>PayloadIdentifier</key>
-      <string>com.duyvinh09config.dns.2025</string>
-      <key>PayloadUUID</key>
-      <string>4C7E8D9F-3A2B-4E5C-9F1A-6D2C8B0E7F4A</string>
-      <key>PayloadDisplayName</key>
-      <string>DNS Tối Ưu Gaming</string>
-      <key>DNSSettings</key>
-      <dict>
-        <key>DNSProtocol</key>
-        <string>HTTPS</string>
-        <key>ServerName</key>
-        <string>1dot1dot1dot1.cloudflare-dns.com</string>
-        <key>ServerURL</key>
-        <string>https://cloudflare-dns.com/dns-query</string>
-        <key>ServerAddresses</key>
-        <array>
-          <string>1.1.1.1</string>
-          <string>1.0.0.1</string>
-          <string>8.8.8.8</string>
-          <string>8.8.4.4</string>
-        </array>
-        <key>SupplementalMatchDomains</key>
-        <array>
-          <string>apple.com</string>
-          <string>icloud.com</string>
-        </array>
-        <key>SupplementalMatchDomainsNoSearch</key>
-        <array>
-          <string>ads.google.com</string>
-          <string>doubleclick.net</string>
-          <string>ads.apple.com</string>
-        </array>
-      </dict>
-    </dict>
+
     <!-- Restrictions -->
     <dict>
       <key>PayloadType</key>
@@ -67,11 +28,12 @@
       <key>PayloadVersion</key>
       <integer>1</integer>
       <key>PayloadIdentifier</key>
-      <string>com.duyvinh09config.restrict.2025</string>
+      <string>com.duyvinh09config.restrict.2026</string>
       <key>PayloadUUID</key>
       <string>9E2F7C1A-5B3D-4F8E-A2C9-7F0D6A1B8E5C</string>
       <key>PayloadEnabled</key>
       <true/>
+
       <!-- QUYỀN RIÊNG TƯ & THEO DÕI -->
       <key>allowAppTrackingTransparency</key><false/>
       <key>allowPersonalizedAds</key><false/>
@@ -80,10 +42,12 @@
       <key>allowCrashReporting</key><false/>
       <key>allowDiagnosticSubmission</key><false/>
       <key>forceLimitAdTracking</key><true/>
+
       <!-- DỊCH VỤ VỊ TRÍ & CHUYỂN ĐỘNG -->
       <key>allowMotionAndFitness</key><false/>
       <key>allowNearbyInteraction</key><false/>
       <key>allowProximitySetupToNewDevice</key><false/>
+
       <!-- TRỢ LÝ & NHẬP LIỆU -->
       <key>allowSiri</key><false/>
       <key>allowSiriSuggestions</key><false/>
@@ -91,19 +55,23 @@
       <key>allowAssistantUserGeneratedContent</key><false/>
       <key>allowDictation</key><false/>
       <key>allowVoiceDialing</key><false/>
+
       <!-- HÀNH VI & TÍNH NĂNG LIÊN KẾT -->
       <key>allowActivityContinuation</key><false/>
       <key>allowUniversalClipboard</key><false/>
       <key>allowHandoff</key><false/>
+
       <!-- MÀN HÌNH KHÓA & GIAO DIỆN -->
       <key>allowWallpaperModification</key><false/>
       <key>allowLockScreenNotificationsView</key><false/>
       <key>allowLockScreenControlCenter</key><false/>
       <key>allowLockScreenTodayView</key><false/>
       <key>allowPassbookWhileLocked</key><false/>
+
       <!-- KẾT NỐI & TRUYỀN DỮ LIỆU -->
       <key>allowAirPlayIncomingRequests</key><false/>
       <key>forceAirDropUnmanaged</key><true/>
+
       <!-- BẢO MẬT -->
       <key>allowAutoUnlock</key><false/>
       <key>allowFindMyDeviceModification</key><false/>
@@ -111,12 +79,14 @@
       <key>allowEnterpriseAppTrust</key><false/>
       <key>allowUntrustedTLSPrompt</key><false/>
       <key>forceEncryptedBackup</key><true/>
+
       <!-- CẬP NHẬT & QUẢN LÝ ỨNG DỤNG -->
       <key>allowOTAPKIUpdates</key><false/>
       <key>allowAutomaticAppUpdates</key><false/>
       <key>allowAppRating</key><false/>
       <key>allowUnmanagedAppBackup</key><false/>
       <key>allowGlobalBackgroundFetchWhenRoaming</key><false/>
+
       <!-- DỊCH VỤ iCLOUD -->
       <key>allowCloudBackup</key><false/>
       <key>allowCloudDocuments</key><false/>
@@ -126,13 +96,15 @@
       <key>allowiCloudMail</key><false/>
       <key>allowiCloudReminders</key><false/>
       <key>allowSharedKeystores</key><false/>
-      <key>allowCloudPhotoLibrary</key><false/>
+      <!-- <key>allowCloudPhotoLibrary</key><false/>
       <key>allowPhotoStream</key><false/>
-      <key>allowSharedStream</key><false/>
+      <key>allowSharedStream</key><false/> -->
       <key>allowCloudKeychainSync</key><false/>
+
       <!-- SÁCH DOANH NGHIỆP -->
       <key>allowEnterpriseBookBackup</key><false/>
       <key>allowEnterpriseBookMetadataSync</key><false/>
+
       <!-- ỨNG DỤNG APPLE MẶC ĐỊNH -->
       <key>allowNews</key><false/>
       <key>allowPodcasts</key><false/>
